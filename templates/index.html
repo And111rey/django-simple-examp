@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Hello Django</title>
+    <link rel="stylesheet" href="{% static "css/style.css" %}"/>
+</head>
+<body>
+
+    <div>
+        <a href="http://127.0.0.1:8000/contacts/">Contacts</a>
+        <a href="http://127.0.0.1:8000/about/">About</a>
+        <h1>{{ header }}</h1>
+    </div>
+    <p> <span class="sk">Name:</span> {{ user.name }} <span class="sk">Age:</span> {{user.age}}</p>
+    <p><span class="sk">Адрес:</span> {{addr.0}} {{addr.1}}</p>
+    <p> <span class="sk">Skills:</span> 
+            {% for el in langs%}
+                {{ el }}
+            {% endfor %}
+    </p>
+    <p>{% now "N j, Y, P" %}</p>
+    <img class="img_emb" src="{% static "images/ima1.png" %}" alt="Stones along the river"/>
+
+    
+</body>
+</html>

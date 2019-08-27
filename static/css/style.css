@@ -1,0 +1,51 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: rgb(59, 57, 57);
+}
+.cont_centr {
+    text-align: center;
+}
+
+.brd {
+    border: 1px solid wheat;
+}
+.blk {
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    color: tomato;
+    box-shadow:  0 10px 15px -5px #C9C9C9;
+}
+
+.img_emb {
+    width:250px;
+    border: 1px solid black;
+}
+
+.sk {
+    color: tomato;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    border: 1px solid black;
+}
+
+.img_emb:hover {
+    transition: all ease 0.5s;
+    border: 3px solid rgb(187, 172, 172);
+}
+a {
+    margin: 3px;
+    border: 1px solid white;
+    text-decoration: none;
+    color: rgb(214, 208, 197);
+}
+a:hover {
+    background: rgb(136, 134, 134);
+}
+
+.emb {
+    width: 25px;
+    
+}
